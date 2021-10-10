@@ -1,0 +1,12 @@
+{
+  "type": "nbtcrafting:brewing",
+  "base": {
+      "item": "lycanthropy:bottle_of_werewolf_blood"
+  },
+  "ingredient": {
+      "item": "minecraft:spider_eye"
+  },
+  "result": {
+     "item": "lycanthropy:silver_sword"
+  }
+}
