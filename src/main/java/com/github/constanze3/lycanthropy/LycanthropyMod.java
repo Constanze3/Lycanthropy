@@ -64,6 +64,4 @@ public class LycanthropyMod implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(MODID, "potion_of_blood_sense"), new ModPotionItem(new StatusEffectInstance(LycanthropyMod.BLOODSENSE, 1200), true, new Item.Settings().group(LycanthropyMod.WEREWOLF_ITEMS).maxCount(1)));
 		GenerateLootTables.register();
 	}
-
-
 }
