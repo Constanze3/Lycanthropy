@@ -1,13 +1,8 @@
 package com.github.constanze3.lycanthropy;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.advancement.criterion.Criteria;
-import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -19,11 +14,20 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class BottleOfBloodItem extends Item {
-    private static final StatusEffectInstance statusEffectInstance = new StatusEffectInstance(StatusEffects.NAUSEA, 200);
-    public BottleOfBloodItem(Settings settings)
+public class ModPotionItem extends Item {
+    public StatusEffectInstance statusEffectInstance;
+    public Boolean isEnchanted;
+
+    public ModPotionItem(StatusEffectInstance effect, Boolean enchanted,Settings settings)
     {
         super(settings);
+        this.statusEffectInstance = effect;
+        this.isEnchanted = enchanted;
+    }
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return isEnchanted;
     }
 
     @Override
@@ -55,7 +59,6 @@ public class BottleOfBloodItem extends Item {
         }
         if(!world.isClient)
         {
-            livingEntity.damage(DamageSource.CRAMMING, 4F);
             livingEntity.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
         }
         if(playerEntity != null)

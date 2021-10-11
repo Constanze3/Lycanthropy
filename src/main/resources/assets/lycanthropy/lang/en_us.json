@@ -2,5 +2,7 @@
   "itemGroup.lycanthropy.werewolf": "Werewolf",
   "item.lycanthropy.silver_ingot": "Silver Ingot",
   "item.lycanthropy.silver_sword": "Silver Sword",
-  "item.lycanthropy.bottle_of_werewolf_blood": "Bottle Of Werewolf Blood"
+  "item.lycanthropy.bottle_of_werewolf_blood": "Bottle of Werewolf Blood",
+  "item.lycanthropy.potion_of_blood_sense": "Potion of Blood Sense",
+  "effect.lycanthropy.blood_sense": "Blood Sense"
 }
