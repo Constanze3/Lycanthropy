@@ -1,0 +1,80 @@
+{
+	"hidden": true,
+	"type": "origins:action_over_time",
+
+	"rising_action": {
+		"type": "origins:toggle",
+		"power": "wolf:run_dash_reload"
+	},
+
+	"falling_action": {
+		"type": "origins:and",
+		"actions": [{
+			"type": "origins:trigger_cooldown",
+			"power": "wolf:resources/bar"
+		},
+		{
+			"type": "origins:change_resource",
+			"resource": "wolf:resources/running_cooldown",
+			"change": 1,
+			"operation": "set"
+		},
+		{
+			"type": "origins:delay",
+			"ticks": 80,
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "wolf:resources/dash_counter",
+					"comparison": "<",
+					"compare_to": 3
+				},
+				"if_action": {
+
+					"type": "origins:and",
+					"actions": [{
+						"type": "origins:change_resource",
+						"resource": "wolf:resources/dash_counter",
+						"change": 1
+					},
+					{
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:resource",
+							"resource": "wolf:resources/dash_counter",
+							"comparison": "<",
+							"compare_to": 3
+						},
+						"if_action": {
+							"type": "origins:toggle",
+							"power": "wolf:run_dash_reload"
+						}
+					},
+					{
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:resource",
+							"resource": "wolf:resources/dash_counter",
+							"comparison": "==",
+							"compare_to": 3
+						},
+						"if_action": {
+							"type": "origins:change_resource",
+							"resource": "wolf:resources/running_cooldown",
+							"change": 0,
+							"operation": "set"
+						}
+					}
+				]
+			}
+		}
+	}
+]
+},
+"interval": 1,
+"condition": 	{
+	"type": "origins:power_active",
+	"power": "wolf:run_dash_reload"
+}
+}

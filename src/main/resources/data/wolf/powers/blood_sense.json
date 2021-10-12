@@ -1,0 +1,14 @@
+{
+	"type": "origins:entity_glow",
+	"entity_condition": {
+ "type": "origins:relative_health",
+    "comparison": "<=",
+    "compare_to": 0.5
+	},
+	"use_teams": false,
+	"red": 1,
+	"green": 0,
+	"blue": 0,
+	"name": "Blood Sense",
+	"description": "You can smell the blood of your enemies, when they are under 50% health."
+}

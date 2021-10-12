@@ -1,0 +1,12 @@
+{
+	"type": "origins:modify_damage_taken",
+	"damage_condition": {
+		"type": "origins:attacker"
+	},
+	"modifier": {
+		"operation": "addition",
+		"value": -4.5
+	},
+	"name": "Thick Skin",
+	"description": "Your skin is so thick that you won't suffer as many wounds as others."
+}

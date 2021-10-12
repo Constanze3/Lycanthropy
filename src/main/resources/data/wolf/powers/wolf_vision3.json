@@ -1,0 +1,8 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "power grant @a wolf:grant_wolf_vision_on_effect"
+    },
+    "interval": 1
+}

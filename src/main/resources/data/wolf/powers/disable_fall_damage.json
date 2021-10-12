@@ -1,0 +1,9 @@
+{
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "fall"
+  },
+  "name": "Springy Legs",
+  "description": "You have acquired incredible flexibility thanks to stretching every day. Your legs became 'springy' so you don't take any fall damage."
+}

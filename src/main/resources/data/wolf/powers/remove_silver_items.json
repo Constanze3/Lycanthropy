@@ -1,0 +1,35 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "clear @s lycanthropy:silver_sword 1"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute at @s run summon minecraft:item ~ ~ ~ {Item:{id:'lycanthropy:silver_sword',Count:1b}}"
+      }
+    ]
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:command",
+        "command": "execute if entity @s[nbt={Inventory:[{id:'lycanthropy:silver_sword'}]}]",
+        "comparison": "==",
+        "compare_to": 1
+      },
+      {
+        "type": "origins:command",
+        "command": "execute if entity @s[nbt={Inventory:[{id:'lycanthropy:silver_ingot'}]}]",
+        "comparison": "==",
+        "compare_to": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "origins:effect_immunity",
+  "effects": [
+    "minecraft:hunger"
+  ],
+  "name": "Carnivorous Stomach",
+  "description": "Your stomach is used to digesting raw meat, so you won't have any troubles eating rotten flesh."
+}

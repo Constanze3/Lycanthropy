@@ -1,0 +1,31 @@
+{
+	"type": "origins:multiple",
+	"particle": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "particle minecraft:dust 0.7 0.05 0.03 1 ~ ~ ~ 0.4 1 0.4 50 15",
+			"permission_level": 4
+
+		},
+		"condition": {
+			"type": "origins:daytime",
+			"inverted": true
+		},
+		"interval": 5
+	},
+	"damage": {
+		"type": "origins:modify_damage_dealt",
+		"condition": {
+			"type": "origins:daytime",
+			"inverted": true
+		},
+		"modifier": {
+			"name": "Extra damage when submerged",
+			"operation": "addition",
+			"value": 6.0
+		}
+	},
+	"name": "Night Hunter",
+	"description": "The beast within wakes up in the night. [red particles show up when you are in beast mode]"
+}

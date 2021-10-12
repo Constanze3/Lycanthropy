@@ -1,0 +1,55 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:damage",
+				"amount": 3,
+				"source": {
+				"name": "generic",
+				"bypasses_armor": true,
+				"unblockable": true
+				}
+			},
+			{
+				"type": "origins:equipped_item_action",
+    		"equipment_slot": "mainhand",
+    		"action": {
+        "type": "origins:consume",
+        "amount": 1
+    		}
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "give @s lycanthropy:bottle_of_werewolf_blood",
+				"permission_level": 4
+			}
+		]
+	},
+	"cooldown": 20,
+	"key": "key.use",
+	"hud_render": {
+		"should_render": false
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:sneaking"
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:glass_bottle"
+					}
+				}
+			}
+		]
+	},
+	"name": "Blood Donation",
+	"descripiton": "You can pour your blood into a glass bottle [hold a glass bottle in your main hand and press shift+right click], and if you mix it with a spider eye in a brewing stand, you can brew a 'Blood Sense' potion, which can give the effect of Blood Sense to non werewolves."
+}

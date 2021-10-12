@@ -1,0 +1,31 @@
+{
+	"powers": [
+		"wolf:resources/bar",
+		"wolf:resources/dash_counter",
+		"wolf:resources/running_cooldown",
+		"wolf:carnivore",
+		"wolf:damage_buff",
+		"wolf:dash",
+		"wolf:disable_fall_damage",
+		"wolf:disable_hunger_effect",
+		"wolf:less_damage_taken",
+		"wolf:night_vision",
+		"wolf:speed_buff",
+		"wolf:water_weakness",
+		"wolf:dash_reload",
+		"wolf:run_dash_reload",
+		"wolf:blood_sense",
+		"wolf:pain_transference_charm",
+		"wolf:wolf_vision2",
+		"wolf:silver_debuff",
+		"wolf:cant_pickup",
+		"wolf:grant_wolf_vision_on_effect",
+		"wolf:wolf_vision3",
+		"wolf:remove_silver_items"
+	],
+	"icon": "minecraft:redstone",
+	"order": 10,
+	"impact": 2,
+	"name": "Werewolf",
+	"description": "You're a wolf with amazing strenght and agility."
+}

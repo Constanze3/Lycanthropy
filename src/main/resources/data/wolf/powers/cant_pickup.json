@@ -1,0 +1,9 @@
+{
+	"hidden": true,
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+  "type": "origins:execute_command",
+  "command": "execute at @s run execute as @e[type=item,nbt={Item:{id:'lycanthropy:silver_sword'}},distance=..3] run data merge entity @s {PickupDelay: 3}"
+}
+}

@@ -1,0 +1,9 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"attribute": "minecraft:generic.movement_speed",
+		"value": 0.04,
+		"operation": "addition"
+	}, "name": "Wolf speed boost",
+	"description": "You've earned so much experience in running, that you're a lot faster on land then everyone else."
+}

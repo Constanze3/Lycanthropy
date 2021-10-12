@@ -1,0 +1,36 @@
+{
+	"type": "origins:multiple",
+	"silver_sword_buff": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "addition",
+			"value": 4.5
+		},
+		"damage_condition": {
+			"type": "origins:attacker",
+			"entity_condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "lycanthropy:silver_sword"
+					}
+				}
+			}
+		}
+	},
+	"arrow_buff": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "addition",
+			"value": 1.5
+		},
+		"damage_condition": {
+			"type": "origins:projectile",
+			"projectile": "minecraft:arrow"
+		}
+	},
+	"name": "Weak to Silver",
+	"description": "Due to your allergy of silver, you take more damage from silver swords and if you contact with silver, then you immediately throw it away. Also arrows deal more damage to you."
+}

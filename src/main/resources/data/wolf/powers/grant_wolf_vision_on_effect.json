@@ -1,0 +1,20 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"entity_glow": {
+		"type": "origins:entity_glow",
+		"entity_condition": {
+			"type": "origins:relative_health",
+			"comparison": "<=",
+			"compare_to": 0.5
+		},
+		"use_teams": false,
+		"red": 1,
+		"green": 0,
+		"blue": 0,
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "lycanthropy:blood_sense"
+		}
+	}
+}
