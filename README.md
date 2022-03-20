@@ -1,3 +1,3 @@
 # Lycantrophy Mod
 Work in progress...
-## Todo: Write README
+## https://www.curseforge.com/minecraft/mc-mods/werewolf-an-origins-addon-fabric
